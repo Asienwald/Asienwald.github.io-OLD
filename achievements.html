@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Achievements</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+
+	<link rel="stylesheet" type="text/css" href="libraries/bootstrap/bootstrap.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/general.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/sidenav.css">
+
+	<link rel="stylesheet" type="text/css" href="css/projects.css">
+	<link rel="stylesheet" type="text/css" href="css/achievements.css">
+
+	<style type="text/css">
+		header{background-image: url("images/background_cheers.jpg");}
+	</style>
+</head>
+<body>
+
+	<header class="w-100 h-100 position-relative home-page-header">
+
+		<div class="opacity-40 position-absolute h-100 w-100"></div>
+
+		<div class="container-fluid position-absolute w-100 h-100 header-content">
+			<nav class="d-flex flex-row w-100">
+				<div class="navbar bg-transparent mr-auto">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="circular-std-bold nav-links" href="index.html">HOME</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<div class="navbar bg-transparent mx-auto">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="m-4 circular-std-bold nav-links" href="about-me.html">ABOUT ME</a>
+							<a class="m-4 circular-std-bold nav-links" href="experiences.html">EXPERIENCES</a>
+							<a class="m-4 circular-std-bold nav-links" href="projects.html">PROJECTS</a>
+							<a class="m-4 circular-std-bold nav-links" href="achievements.html">ACHIEVEMENTS</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<div class="navbar bg-transparent ml-auto">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="circular-std-bold nav-links" href="contact-me.html">CONTACT ME</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<span class="target"></span>
+				
+			</nav>
+
+			<div style="height: 28vh;"></div>
+
+			<div class="row">
+				<div class="col-md-12 col-lg-10 mx-auto text-center">
+					<h1 class="headline-1 mb-5 circular-std-bold text-white">
+						My
+						<div class="position-relative d-inline-block hover-underline pb-3">
+							<span class="headline-1">Achievements</span>
+						</div>
+					</h1>
+					<div style="height: 10%;"></div>
+					<h3 class="headline-2 mt-5 circular-std-bold text-white">and the people who helped me along the way.</h3>
+				</div>
+				
+			</div>
+
+			<div class="position-absolute image-credits">
+				<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@guillealvarez?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Guille Álvarez"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Guille Álvarez</span></a>
+			</div>
+		</div>
+
+		<div id="sidenav-btn" class="position-fixed">
+			<span onclick="openNav()"><i class="fas fa-bars fa-4x icon"></i></span>
+		</div>
+		
+	</header>
+
+	<div id="mySidenav" class="sidenav">
+		<div class="sidebar-contents position-relative p-0 h-100">
+			<a href="javascript:void(0)" onclick="closeNav()" class="d-flex justify-content-end pr-3">
+				<i class="fas fa-times fa-2x icon m-4"></i>
+			</a>
+
+			<div class="sidenav-links">
+				<a class="neue-montreal small-text" href="index.html">HOME</a>
+				<a class="neue-montreal small-text" href="about-me.html">ABOUT ME</a>
+				<a class="neue-montreal small-text" href="experiences.html">EXPERIENCES</a>
+				<a class="neue-montreal small-text" href="projects.html">PROJECTS</a>
+				<a class="neue-montreal small-text" href="achievements.html">ACHIEVEMENTS</a>
+				<a class="neue-montreal small-text" href="contact-me.html">CONTACT ME</a>
+			</div>
+
+			<div id="sidebar-footer" class="text-center w-100">
+
+				<div class="d-inline-block p-0">
+					<p class="neue-montreal text-white small-text px-4 pb-3 underline-white">asienwald@gmail.com</p>
+					<div class="my-3 row p-0">
+						<div class="col-4 p-0">
+							<a class="icon" href="#">
+								<i class="fab fa-instagram fa-3x"></i>
+							</a>
+						</div>
+						<div class="col-4 p-0">
+							<a class="icon" href="#">
+								<i class="fab fa-github fa-3x"></i>
+							</a>
+						</div>
+						<div class="col-4 p-0">
+							<a class="icon" href="#">
+								<i class="fab fa-telegram-plane fa-3x"></i>
+							</a>
+						</div>
+					</div>
+
+					
+					
+				</div>
+
+				<div class="credits">
+					<p>Designed & Coded by Me :D</p>
+					<p style="font-style: italic;">© 2020 Loh Kar Wei All Rights Reserved</p>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+
+
+	<div class="container-fluid main-body">
+		<div>
+			<h2 class="headline-2 underline-grey pb-2 neue-montreal">All these wouldn't have been possible without the help and encouragement of my friends and family.</h2>
+		</div>
+
+		<div class="row my-5">
+			<div class="col-lg-3">
+				<div class="card w-100 h-100 p-3" data-aos="fade-up">
+					<div class="card-img-top p-0 project-img border-grey" style="background-image: url('images/cxa finalist 2019.png')"></div>
+					<div class="card-body">
+						<h4 class="card-text neue-montreal headline-3 text-center">Code Xtreme Apps 2019 Finalist (Open Category)</h4>
+						
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="card w-100 h-100 p-3" data-aos="fade-up">
+					<div class="card-img-top p-0 project-img border-grey" style="background-image: url('images/hack asia 2019.png')"></div>
+					<div class="card-body">
+						<h4 class="card-text neue-montreal headline-3 text-center">Hack.Asia 2019 Challenge Runner-Up</h4>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="card w-100 h-100 p-3" data-aos="fade-up">
+					<div class="card-img-top p-0 project-img border-grey" style="background-image: url('images/cys hackathon 01.png')"></div>
+					<div class="card-body">
+						<h4 class="card-text neue-montreal headline-3 text-center">CYS Hackathon 2019 Winners (GRP 10)</h4>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="card w-100 h-100 p-3" data-aos="fade-up">
+					<div class="card-img-top p-0 project-img border-grey" style="background-image: url('images/cys ctf 01.png')"></div>
+					<div class="card-body">
+						<h4 class="card-text neue-montreal headline-3 text-center">CYS CTF 2019 3rd Place</h4>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row my-5">
+			<div class="col-lg-3">
+				<div class="card w-100 h-100 p-3" data-aos="fade-up">
+					<div class="card-img-top p-0 project-img border-grey" style="background-image: url('images/aisp svrp 2019 silver 001.jpg')"></div>
+					<div class="card-body">
+						<h4 class="card-text neue-montreal headline-3 text-center">AiSP SVRP 2019 Silver Tier</h4>
+						
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="card w-100 h-100 p-3" data-aos="fade-up">
+					<div class="card-img-top p-0 project-img border-grey" style="background-image: url('images/dso scholarship 02 001.jpg')"></div>
+					<div class="card-body">
+						<h4 class="card-text neue-montreal headline-3 text-center">DSO Scholarship 2019 Awardee</h4>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="card w-100 h-100 p-3" data-aos="fade-up">
+					<div class="card-img-top p-0 project-img border-grey" style="background-image: url('images/cmls cert.png')"></div>
+					<div class="card-body">
+						<h4 class="card-text neue-montreal headline-3 text-center">GSTF Certified Machine Learning Specialist 2019</h4>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				
+			</div>
+		</div>
+
+
+		<footer class="text-center mt-5">
+			<div style="height: 10vh;"></div>
+
+			<div class="d-inline-block p-0">
+				<h4 class="neue-montreal text-grey small-text px-4 pb-3 underline-grey">asienwald@gmail.com</h4>
+				<div class="my-3 row p-0">
+					<div class="col-4 p-0">
+						<a class="icon" href="#">
+							<i class="fab fa-instagram fa-4x"></i>
+						</a>
+					</div>
+					<div class="col-4 p-0">
+						<a class="icon" href="#">
+							<i class="fab fa-github fa-4x"></i>
+						</a>
+					</div>
+					<div class="col-4 p-0">
+						<a class="icon" href="#">
+							<i class="fab fa-telegram-plane fa-4x"></i>
+						</a>
+					</div>
+				</div>
+
+				
+				
+			</div>
+
+			<div class="credits">
+				<p>Font made from <a href="http://www.onlinewebfonts.com" style="color: #000000">oNline Web Fonts</a> is licensed by CC BY 3.0</p>
+				<p>Credits to Laurence Brunner (Circular Std) and Mathieu Desjardins (Neue Montreal)</p>
+				<p>Designed & Coded by Me :D</p>
+				<p style="font-style: italic;">© 2020 Loh Kar Wei All Rights Reserved</p>
+			</div>
+		</footer>
+	</div>
+
+	
+
+
+
+
+
+	<script type="text/javascript" src="libraries/jquery/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="libraries/bootstrap/popper.min.js"></script>
+	<script type="text/javascript" src="libraries/bootstrap/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/07a638cb97.js" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	
+	<script type="text/javascript" src="js/general.js"></script>
+	<script type="text/javascript" src="js/header.js"></script>
+	<script type="text/javascript" src="js/fullpagescroll.js"></script>
+	<script type="text/javascript" src="js/sidenav.js"></script>
+	<script type="text/javascript" src="js/flex.js"></script>
+
+	<script type="text/javascript">
+		AOS.init();
+	</script>
+
+</body>
+</html>

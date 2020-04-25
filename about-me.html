@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>More about me!</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+
+	<link rel="stylesheet" type="text/css" href="libraries/bootstrap/bootstrap.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/general.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/sidenav.css">
+	<link rel="stylesheet" type="text/css" href="css/about-me.css">
+
+	<style type="text/css">
+		header{background-image: url("images/background_music.jpg");}
+	</style>
+</head>
+<body>
+
+	<header class="w-100 h-100 position-relative home-page-header">
+
+		<div class="opacity-40 position-absolute h-100 w-100"></div>
+
+		<div class="container-fluid position-absolute w-100 h-100 header-content">
+			<nav class="d-flex flex-row w-100">
+				<div class="navbar bg-transparent mr-auto">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="circular-std-bold nav-links" href="index.html">HOME</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<div class="navbar bg-transparent mx-auto">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="m-4 circular-std-bold nav-links" href="about-me.html">ABOUT ME</a>
+							<a class="m-4 circular-std-bold nav-links" href="experiences.html">EXPERIENCES</a>
+							<a class="m-4 circular-std-bold nav-links" href="projects.html">PROJECTS</a>
+							<a class="m-4 circular-std-bold nav-links" href="achievements.html">ACHIEVEMENTS</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<div class="navbar bg-transparent ml-auto">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="circular-std-bold nav-links" href="contact-me.html">CONTACT ME</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<span class="target"></span>
+				
+			</nav>
+
+			<div class="space-25"></div>
+
+			<div class="row">
+				<div class="col-md-12 col-lg-10 mx-auto text-center">
+					<h1 class="headline-4 mb-5 circular-std-bold text-white">
+						All you need to know about 
+						<div class="position-relative d-inline-block hover-underline">
+							<span class="big-text">ME</span>
+						</div>
+					</h1>
+					<div class="space-10"></div>
+					<h3 class="headline-2 mt-5 circular-std-bold text-white">My passion, my interests, and my hobbies.</h3>
+				</div>
+				
+			</div>
+
+			<div class="position-absolute image-credits">
+				<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@spencerimbrockphoto?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Spencer Imbrock"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Spencer Imbrock</span></a>
+			</div>
+		</div>
+		
+	</header>
+
+	<div id="sidenav-btn" class="position-fixed" style="cursor: pointer;">
+		<span onclick="openNav()"><i class="fas fa-bars fa-4x icon"></i></span>
+	</div>
+
+	<div id="mySidenav" class="sidenav">
+		<div class="sidebar-contents position-relative p-0 h-100">
+			<a href="javascript:void(0)" onclick="closeNav()" class="d-flex justify-content-end pr-3">
+				<i class="fas fa-times fa-2x icon m-4"></i>
+			</a>
+
+			<div class="sidenav-links">
+				<a class="neue-montreal small-text" href="index.html">HOME</a>
+				<a class="neue-montreal small-text" href="about-me.html">ABOUT ME</a>
+				<a class="neue-montreal small-text" href="experiences.html">EXPERIENCES</a>
+				<a class="neue-montreal small-text" href="projects.html">PROJECTS</a>
+				<a class="neue-montreal small-text" href="achievements.html">ACHIEVEMENTS</a>
+				<a class="neue-montreal small-text" href="contact-me.html">CONTACT ME</a>
+			</div>
+
+			<div id="sidebar-footer" class="text-center w-100">
+
+				<div class="d-inline-block p-0">
+					<p class="neue-montreal text-white small-text px-4 pb-3 underline-white">asienwald@gmail.com</p>
+					<div class="my-3 row p-0">
+						<div class="col-4 p-0">
+							<a class="icon" href="#">
+								<i class="fab fa-instagram fa-3x"></i>
+							</a>
+						</div>
+						<div class="col-4 p-0">
+							<a class="icon" href="#">
+								<i class="fab fa-github fa-3x"></i>
+							</a>
+						</div>
+						<div class="col-4 p-0">
+							<a class="icon" href="#">
+								<i class="fab fa-telegram-plane fa-3x"></i>
+							</a>
+						</div>
+					</div>
+
+					
+					
+				</div>
+
+				<div class="credits">
+					<p>Designed & Coded by Me :D</p>
+					<p style="font-style: italic;">© 2020 Loh Kar Wei All Rights Reserved</p>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+
+
+	<div class="container-fluid h-100 main-body position-relative">
+		
+
+		<div class="row h-100">
+			<div id="details-of-me" class="col-lg-8 col-md-10 col-sm-10 col-10 p-0 re mx-auto">
+				<div style="height: 2vw"></div>
+				<h2 class="pb-3 headline-4 text-white white-border-below circular-std-bold">ABOUT ME</h2>
+
+				<div style="height: 3vw"></div>
+
+				<div id="about-me-details" class="ml-5 font-input headline-2">
+					<p class="details-header">&ensp;&nbsp;WHO ## <span class="details">&ensp; Loh Kar Wei</span></p>
+					<p class="details-header">&nbsp;WHAT ## <span class="details">&ensp; IT Student</span></p>
+					<p class="details-header">WHERE ## <span class="details">&ensp; Singapore Polytechnic</span></p>
+					<p class="details-header">&nbsp;WHEN ## <span class="details">&ensp; August 2002 - Present</span></p>
+					<div class="d-flex flex-row ">
+						<p class="details-header" style="white-space: nowrap;">&ensp;&nbsp;WHY ##</p>
+						&ensp;&ensp;&ensp;
+						<span class="details">Because learning new things keeps my life fresh!</span>
+					</div>
+					
+				</div>
+
+				<div class="w-100 position-absolute white-border-below" style="bottom: 0"></div>
+			</div>
+			<div id="pic-of-me" class="col-lg-4 col-md-5 col-sm-5 col-xs-4 col-5 mx-auto p-0">
+				<img class="img-fluid img-border-white d-block " id="img-of-me" src="images/photo-of-me.jpg" alt="Photo of Me!">
+				
+				
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="container-fluid main-body content-body">
+		<h2 class="mb-5 details neue-montreal headline-2" style="font-weight: bold;">Everyone had something they wanted to be when they were small. I was no exception.</h2>
+
+
+		<div class="row">
+			<div class="col-lg-4">
+				<img class="img-fluid w-100 h-auto img-border-grey" src="images/photo_create.jpg" alt="The Power of Creation" data-aos="flip-left">
+				<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@juniorferreir_?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Júnior Ferreira"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Júnior Ferreira</span></a>
+			</div>
+			<div class="col-lg-8 small-text text-white neue-montreal">
+				<p>When I was small, I dreamt of being an inventor. <br> The ability to create new things that people will use and benefit from seemed appealing to me. </p>
+				<br>
+				<p>My dream was forgotten as I turned into a teenager, up until the day I decided to take Computing as an O level subject in Secondary 3.</p>
+				<br>
+				<p>The power to develop software through coding immediately awakened that small inventor (or developer!) I had inside of me and I gradually begun to self-learn different developing tools and languages and start small projects outside of the Python lessons I had in class.</p>
+				<br>
+				<p>I learnt of the huge impact and need of cyber-security specialists in Singapore which drew my attention to security, and spurred me on to study a Cyber Security Diploma in Singapore Polytechnic.</p>
+			</div>
+		</div>
+
+		<div style="height: 5vw"></div>
+
+		<p class="mb-5 small-text text-white neue-montreal">Aside from studying for my diploma, I would often find myself actively participating in Hackathons and developing games.</p>
+
+		<div class="row">
+			<div class="col-lg-8">
+				<img class="img-fluid w-100 h-auto img-border-grey-sm" src="images/photo_reigns_of_fate.png" alt="Developing my games in Unity" data-aos="flip-left">
+				<p class="mt-5 small-text neue-montreal annotate-text-mobile" data-aos="fade-down-left" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="50">	A 2D open-world RPG called Reigns of Fate that I'm currently developing with a friend!</p>
+			</div>
+			<div class="col-lg-4">
+				<p class="small-text text-white neue-montreal">I really love open-world RPGs (The Witcher 3 is my all-time favourite!), hence a small dream of mine is to develop an open-world RPG game where many people will play and appreciate.</p>
+
+				<p class="mt-5 small-text neue-montreal text-annotate" data-aos="fade-down-left" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="50">	A 2D open-world RPG called Reigns of Fate that I'm currently developing with a friend!</p>
+			</div>
+		</div>
+
+		<div style="height: 4vw"></div>
+
+		<p class="mb-5 small-text text-white neue-montreal">Just like the ever-changing landscape in IT, I strive to learn new skills and develop new creations and solutions to better our everyday lives through the power of technology.</p>
+
+		<div style="height: 5vw"></div>
+
+		<h2 class="mb-5 details neue-montreal headline-2" style="font-weight: bold;">However, life is also much more interesting than living in front of a computer.</h2>
+
+		<div class="row">
+			<div class="col-lg-6 small-text text-white neue-montreal">
+				<p>My passion for IT might be great, but my love for music and art is greater.</p>
+				<br>
+				<p>Since joining the Symphonic Band in secondary school, music has become an irreplacable part of my life.</p>
+				<br>
+				<p>I really love rock music and JROCK, so much that I bought my first electric guitar and amp in Secondary 4 and started learning how to play it.</p>
+				<br>
+				<p>Gradually, I bought more and more different types of guitars to experience different types of playing styles and music genres. <br> I also got my own electronic drumset to start learning how to play the drums too!</p>
+				<br>
+				<p>One day, I dream of starting my own band and cover JROCK songs that I love.</p>
+
+				<div style="height: 12vh;"></div>
+
+				<p class="mt-3 mb-5 neue-montreal text-annotate" data-aos="fade-down-right" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="50">My beloved Ibanez RG 1451 Prestige - a rare Ibanez guitar with a fixed bridge! <br> <br> It is fit with seymour duncan pickups and is my favourite among my few guitars in terms of sound and playability!</p>
+			</div>
+			<div class="col-lg-6">
+				<img class="img-fluid w-100 h-auto img-border-grey" src="images/me-playing-guitar.png" alt="me playing guitar!" data-aos="flip-left">
+
+				<p class="mt-3 mb-5 small-text neue-montreal text-annotate text-center annotate-text-mobile" data-aos="fade-down-up" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="50">Me playing on my acoustic guitar!</p>
+
+				<img class="img-fluid w-100 h-auto img-border-grey" src="images/ibanez-prestige.jpg" alt="My beloved Ibanez Prestige electric guitar" data-aos="flip-left">
+
+				<p class="mt-3 mb-5 neue-montreal annotate-text-mobile small-text" data-aos="fade-down-right" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="50">My beloved Ibanez RG 1451 Prestige - a rare Ibanez guitar with a fixed bridge! <br> <br> It is fit with seymour duncan pickups and is my favourite among my few guitars in terms of sound and playability!</p>
+			</div>
+			
+		</div>
+
+		<div style="height: 8vh;"></div>
+
+		<div class="row">
+			<div class="col-lg-6">
+				<img class="img-fluid w-100 h-auto img-border-grey" src="images/photo_pencils.jpg" alt="Colourful Pencils" data-aos="flip-left">
+				<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@jessbailey?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Jess Bailey"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Jess Bailey</span></a>
+			</div>
+			<div class="col-lg-6 small-text text-white neue-montreal">
+				<p>Besides playing my instruments, I also spend a large amount of time in front of an empty piece of paper drawing. </p>
+				<br>
+				<p>I wouldn't say my drawing skills are anywhere near something I would be proud of, but I am surely working hard for that day to arrive.</p>
+				<br>
+				<p>One day, I will reach it and be able to produce sprites and illustrations for the games I am working on!</p>
+			</div>
+		</div>
+
+
+		<div class="text-center mt-5">
+			<span class="text-annotate headline-3 annotate-text-mobile" style="cursor: pointer;" onclick="toTop()" data-aos="fade-down-up" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="50">Back to Top</span>
+		</div>
+		
+
+		<footer class="text-center">
+			<div style="height: 10vh;"></div>
+
+			<div class="d-inline-block p-0">
+				<h4 class="neue-montreal text-white small-text px-4 pb-3 underline-white">asienwald@gmail.com</h4>
+				<div class="my-3 row p-0">
+					<div class="col-4 p-0">
+						<a class="icon" href="#">
+							<i class="fab fa-instagram fa-4x"></i>
+						</a>
+					</div>
+					<div class="col-4 p-0">
+						<a class="icon" href="#">
+							<i class="fab fa-github fa-4x"></i>
+						</a>
+					</div>
+					<div class="col-4 p-0">
+						<a class="icon" href="#">
+							<i class="fab fa-telegram-plane fa-4x"></i>
+						</a>
+					</div>
+				</div>
+
+				
+				
+			</div>
+
+			<div class="credits">
+				<p>Font made from <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a> is licensed by CC BY 3.0</p>
+				<p>Credits to Laurence Brunner (Circular Std) and Mathieu Desjardins (Neue Montreal)</p>
+				<p>Designed & Coded by Me :D</p>
+				<p style="font-style: italic;">© 2020 Loh Kar Wei All Rights Reserved</p>
+			</div>
+		</footer>
+	</div>
+
+
+
+
+
+	<script type="text/javascript" src="libraries/jquery/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="libraries/bootstrap/popper.min.js"></script>
+	<script type="text/javascript" src="libraries/bootstrap/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/07a638cb97.js" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	
+	<script type="text/javascript" src="js/general.js"></script>
+	<script type="text/javascript" src="js/header.js"></script>
+	<script type="text/javascript" src="js/fullpagescroll.js"></script>
+	<script type="text/javascript" src="js/sidenav.js"></script>
+	<script type="text/javascript" src="js/flex.js"></script>
+
+	<script type="text/javascript" src="js/flexaboutme.js"></script>
+
+	<script type="text/javascript">
+		AOS.init();
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+.circle{
+	height: 7vw;
+	width: 8vw;
+	background-color: #50DEFD;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.rectangle{
+	background-color: #50DEFD;
+	display: inline-block;
+	height: 2vw;
+	width: 2vw;
+}
+
+.content-body{
+	/*padding: 6% 10%;*/
+}
+
+.page-header{
+	color: #E36097;
+}
+
+.page-point{
+	color: #24B97B;
+}
+
+.logo{
+	height: 10vh;
+	width: 10vw;
+}
+
+@media only screen and (max-width: 1280px){
+	.headline-4{font-size: 11vw; }
+	.headline-2{font-size: 5vw;}
+
+	.logo{
+		width: 10vw;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	.content-body .headline-4{
+		font-size: 8vw;
+		margin: 0 auto;
+		padding-bottom: 2vh;
+		text-align: center;
+	}
+	.content-body .headline-3{
+		font-size: 3vw;
+	}
+
+	.last-page .headline-4{
+		font-size: 8vw;
+	}
+}

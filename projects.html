@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Projects</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+
+	<link rel="stylesheet" type="text/css" href="libraries/bootstrap/bootstrap.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/general.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/sidenav.css">
+
+	<link rel="stylesheet" type="text/css" href="css/projects.css">
+
+	<style type="text/css">
+		header{background-image: url("images/background_computer.jpg");}
+	</style>
+</head>
+<body>
+
+	<header class="w-100 h-100 position-relative home-page-header">
+
+		<div class="opacity-40 position-absolute h-100 w-100"></div>
+
+		<div class="container-fluid position-absolute w-100 h-100 header-content">
+			<nav class="d-flex flex-row w-100">
+				<div class="navbar bg-transparent mr-auto">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="circular-std-bold nav-links" href="index.html">HOME</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<div class="navbar bg-transparent mx-auto">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="m-4 circular-std-bold nav-links" href="about-me.html">ABOUT ME</a>
+							<a class="m-4 circular-std-bold nav-links" href="experiences.html">EXPERIENCES</a>
+							<a class="m-4 circular-std-bold nav-links" href="projects.html">PROJECTS</a>
+							<a class="m-4 circular-std-bold nav-links" href="achievements.html">ACHIEVEMENTS</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<div class="navbar bg-transparent ml-auto">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="circular-std-bold nav-links" href="contact-me.html">CONTACT ME</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<span class="target"></span>
+				
+			</nav>
+
+			<div style="height: 28vh;"></div>
+
+			<div class="row">
+				<div class="col-md-12 col-lg-10 mx-auto text-center">
+					<h1 class="headline-1 mb-5 circular-std-bold text-white">
+						My
+						<div class="position-relative d-inline-block hover-underline pb-3">
+							<span class="headline-1">Projects</span>
+						</div>
+					</h1>
+					<div style="height: 10%;"></div>
+					<h3 class="headline-2 mt-5 circular-std-bold text-white">From Hackathon submissions to passion <br class="no-show">projects, they're all here.</h3>
+				</div>
+				
+			</div>
+
+			<div class="position-absolute image-credits">
+				<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@stanleydai?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Stanley Dai"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Stanley Dai</span></a>
+			</div>
+		</div>
+
+		<div id="sidenav-btn" class="position-fixed">
+			<span onclick="openNav()"><i class="fas fa-bars fa-4x icon"></i></span>
+		</div>
+		
+	</header>
+
+	<div id="mySidenav" class="sidenav">
+		<div class="sidebar-contents position-relative p-0 h-100">
+			<a href="javascript:void(0)" onclick="closeNav()" class="d-flex justify-content-end pr-3">
+				<i class="fas fa-times fa-2x icon m-4"></i>
+			</a>
+
+			<div class="sidenav-links">
+				<a class="neue-montreal small-text" href="index.html">HOME</a>
+				<a class="neue-montreal small-text" href="about-me.html">ABOUT ME</a>
+				<a class="neue-montreal small-text" href="experiences.html">EXPERIENCES</a>
+				<a class="neue-montreal small-text" href="projects.html">PROJECTS</a>
+				<a class="neue-montreal small-text" href="achievements.html">ACHIEVEMENTS</a>
+				<a class="neue-montreal small-text" href="contact-me.html">CONTACT ME</a>
+			</div>
+
+			<div id="sidebar-footer" class="text-center w-100">
+
+				<div class="d-inline-block p-0">
+					<p class="neue-montreal text-white small-text px-4 pb-3 underline-white">asienwald@gmail.com</p>
+					<div class="my-3 row p-0">
+						<div class="col-4 p-0">
+							<a class="icon" href="#">
+								<i class="fab fa-instagram fa-3x"></i>
+							</a>
+						</div>
+						<div class="col-4 p-0">
+							<a class="icon" href="#">
+								<i class="fab fa-github fa-3x"></i>
+							</a>
+						</div>
+						<div class="col-4 p-0">
+							<a class="icon" href="#">
+								<i class="fab fa-telegram-plane fa-3x"></i>
+							</a>
+						</div>
+					</div>
+
+					
+					
+				</div>
+
+				<div class="credits">
+					<p>Designed & Coded by Me :D</p>
+					<p style="font-style: italic;">© 2020 Loh Kar Wei All Rights Reserved</p>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+
+
+	<div class="container-fluid main-body">
+		<div>
+			<h2 class="headline-2 underline-grey pb-2 neue-montreal">Projects I've worked on</h2>
+		</div>
+
+		<div class="mt-5">
+			<div class="row my-5">
+				<div class="col-lg-4">
+					<div class="card w-100 h-100" data-aos="fade-up">
+						<div class="card-img-top p-0 project-img" style="background-image: url('images/cxa 2019 01.jpg')"></div>
+						<div class="card-body">
+							<h4 class="card-title neue-montreal headline-3">RE-Station</h4>
+							<div class="card-text tags row neue-montreal">
+								<p class="card-text col-2">Arduino</p>
+								<p class="card-text col-2">Web Dev</p>
+								<p class="card-text col-2">Firebase</p>
+								<p class="card-text col-3">Raspberry Pi</p>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="card w-100 h-100" data-aos="fade-up">
+						<div class="card-img-top p-0 project-img" style="background-image: url('images/night in the woods 01.png')"></div>
+						<div class="card-body">
+							<h4 class="card-title neue-montreal headline-3">A Night in the Woods</h4>
+							<div class="card-text tags row neue-montreal">
+								<p class="card-text col-2">Game Dev</p>
+								<p class="card-text col-2">Unity</p>
+								<p class="card-text col-2">C#</p>
+								<p class="card-text col-3">Mobile Dev</p>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="card w-100 h-100" data-aos="fade-up">
+						<div class="card-img-top p-0 project-img" style="background-image: url('images/smart poly 01.png')"></div>
+						<div class="card-body">
+							<h4 class="card-title neue-montreal headline-3">SmartPoly 2019 AI Chatbot with Neo4j</h4>
+							<div class="card-text tags row neue-montreal">
+								<p class="card-text col-3">Tensorflow</p>
+								<p class="card-text col-2">NLP</p>
+								<p class="card-text col-3">Graph Database</p>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row my-5">
+				<div class="col-lg-4">
+					<div class="card w-100 h-100" data-aos="fade-up">
+						<div class="card-img-top p-0 project-img" style="background-image: url('images/custom pc.jpg')"></div>
+						<div class="card-body">
+							<h4 class="card-title neue-montreal headline-3">Custom PC Build</h4>
+							<div class="card-text tags row neue-montreal">
+								<p class="card-text col-3">Custom PC</p>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="card w-100 h-100" data-aos="fade-up">
+						<div class="card-img-top p-0 project-img" style="background-image: url('images/hack asia 01.jpg')"></div>
+						<div class="card-body">
+							<h4 class="card-title neue-montreal headline-3">I.E.A.R.S</h4>
+							<div class="card-text tags row neue-montreal">
+								<p class="card-text col-2">AR</p>
+								<p class="card-text col-2">AWS</p>
+								<p class="card-text col-3">Game Dev</p>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="card w-100 h-100" data-aos="fade-up">
+						<div class="card-img-top p-0 project-img" style="background-image: url('images/cygage 01.png')"></div>
+						<div class="card-body">
+							<h4 class="card-title neue-montreal headline-3">CYS Cygage</h4>
+							<div class="card-text tags row neue-montreal">
+								<p class="card-text col-3">Ongoing</p>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row my-5">
+				<div class="col-lg-4">
+					<div class="card w-100 h-100" data-aos="fade-up">
+						<div class="card-img-top p-0 project-img" style="background-image: url('images/reigns of fate 03.png')"></div>
+						<div class="card-body">
+							<h4 class="card-title neue-montreal headline-3">Reigns of Fate</h4>
+							<div class="card-text tags row neue-montreal">
+								<p class="card-text col-2">Game Dev</p>
+								<p class="card-text col-2">Unity</p>
+								<p class="card-text col-2">C#</p>
+								<p class="card-text col-2">Ongoing</p>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="card w-100 h-100" data-aos="fade-up">
+						<div class="card-img-top p-0 project-img" style="background-image: url('images/dso_logo.jpg')"></div>
+						<div class="card-body">
+							<h4 class="card-title neue-montreal headline-3">Automated Red Teaming</h4>
+							<div class="card-text tags row neue-montreal">
+								<p class="card-text col-2">Intern</p>
+								<p class="card-text col-3">Machine Learning</p>
+								<p class="card-text col-3">Pentesting</p>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="text-center mt-5">
+				<div style="height: 10vh;"></div>
+
+				<div class="d-inline-block p-0">
+					<h4 class="neue-montreal text-grey small-text px-4 pb-3 underline-grey">asienwald@gmail.com</h4>
+					<div class="my-3 row p-0">
+						<div class="col-4 p-0">
+							<a class="icon" href="#">
+								<i class="fab fa-instagram fa-4x"></i>
+							</a>
+						</div>
+						<div class="col-4 p-0">
+							<a class="icon" href="#">
+								<i class="fab fa-github fa-4x"></i>
+							</a>
+						</div>
+						<div class="col-4 p-0">
+							<a class="icon" href="#">
+								<i class="fab fa-telegram-plane fa-4x"></i>
+							</a>
+						</div>
+					</div>
+
+					
+					
+				</div>
+
+				<div class="credits">
+					<p>Font made from <a href="http://www.onlinewebfonts.com" style="color: #000000">oNline Web Fonts</a> is licensed by CC BY 3.0</p>
+					<p>Credits to Laurence Brunner (Circular Std) and Mathieu Desjardins (Neue Montreal)</p>
+					<p>Designed & Coded by Me :D</p>
+					<p style="font-style: italic;">© 2020 Loh Kar Wei All Rights Reserved</p>
+				</div>
+			</footer>
+	</div>
+
+	
+
+
+
+
+
+	<script type="text/javascript" src="libraries/jquery/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="libraries/bootstrap/popper.min.js"></script>
+	<script type="text/javascript" src="libraries/bootstrap/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/07a638cb97.js" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	
+	<script type="text/javascript" src="js/general.js"></script>
+	<script type="text/javascript" src="js/header.js"></script>
+	<script type="text/javascript" src="js/fullpagescroll.js"></script>
+	<script type="text/javascript" src="js/sidenav.js"></script>
+	<script type="text/javascript" src="js/flex.js"></script>
+
+	<script type="text/javascript">
+		AOS.init();
+	</script>
+
+</body>
+</html>

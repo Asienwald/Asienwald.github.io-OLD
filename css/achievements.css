@@ -1,0 +1,22 @@
+.border-grey{
+	border: 10px solid #A2A2A2;
+}
+
+@media only screen and (max-width: 1280px){
+	.headline-1{
+		font-size: 10vw;
+	}
+	.headline-2{
+		font-size: 5vw;
+	}
+
+	.main-body{
+		padding: 8vh 10vw;
+	}
+	.main-body .headline-2{
+		font-size: 4vw;
+	}
+	.card .headline-3{
+		font-size: 5vw;
+	}
+}

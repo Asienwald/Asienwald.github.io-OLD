@@ -1,0 +1,45 @@
+.main-body{
+	background-color: #E1E1E1;
+	padding: 6% 6%;
+}
+
+.underline-grey{border-bottom: 5px solid #7D7D7D;}
+
+.project-img{
+	height: 30vh;
+	background-position: center;
+	background-size: cover;
+}
+
+.tags{
+	color: #AAAAAA;
+	font-size: 0.8vw;
+	padding: 0;
+	white-space: nowrap;
+	width: auto;
+}
+
+@media only screen and (max-width: 1280px){
+	.headline-1{
+		font-size: 14vw;
+	}
+	.headline-2{
+		font-size: 6vw;
+	}
+	.no-show{display: none;}
+
+	.card{
+		height: auto !important;
+		margin: 3vh 0; 
+	}
+	.main-body .row{
+		margin: 0 !important;
+	}
+
+	.card .headline-3{
+		font-size: 6vw;
+	}
+	.tags{
+		font-size: 2.8vw;
+	}
+}
