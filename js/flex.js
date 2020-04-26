@@ -1,11 +1,11 @@
 $(document).ready(() => {
-    console.log($("body").width());
-    console.log(screen.innerWidth);
-    console.log(window.innerWidth);
+    // console.log($("body").width());
+    // console.log(screen.innerWidth);
+    // console.log(window.innerWidth);
     $("html").innerWidth = window.innerWidth;
 
     function checkWidth(){
-        console.log("Change bg!");
+        // console.log("Change bg!");
         let prev_img = $("header").css("background-image"), img = "";
         if(window.innerWidth < 1920){
             $("#sidenav-btn span i").removeClass("fa-4x");
@@ -31,7 +31,7 @@ $(document).ready(() => {
             img = prev_img[0]+".jpg";
         }
 
-        console.log(img);
+        // console.log(img);
 
         $("header").css({"background-image": img});
     }

@@ -55,7 +55,7 @@ $(document).ready(function () {
             continueNormalScrolling = true;
         }else continueNormalScrolling = false;
 
-        console.log(continueNormalScrolling);
+        // console.log(continueNormalScrolling);
     }
     
 
@@ -74,7 +74,7 @@ $(document).ready(function () {
         // this.console.log(activeSection);
 
         if(($("html").scrollTop() < ($(window).height() * activeSection) - 10) && window.innerHeight > 1280){
-            console.log("do the wheelie");
+            // console.log("do the wheelie");
             continueNormalScrolling = false;
         }
 
