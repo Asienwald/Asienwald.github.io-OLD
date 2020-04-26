@@ -29,10 +29,10 @@
 		font-size: 2vw;
 		margin-top: 5vh;
 	}
-	footer .icon i{
+	footer .icon .fa-4x{
 		display: none;
 	}
 	footer .icon .show-sm{
-		display: block;
+		display: block !important;
 	}
 }

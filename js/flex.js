@@ -1,4 +1,8 @@
 $(document).ready(() => {
+    console.log($("body").width());
+    console.log(screen.innerWidth);
+    console.log(window.innerWidth);
+    $("html").innerWidth = window.innerWidth;
 
     function checkWidth(){
         console.log("Change bg!");
