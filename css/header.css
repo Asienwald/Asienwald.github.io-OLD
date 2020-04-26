@@ -2,6 +2,7 @@ header{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-color: #000000;
 }
 
 .header-content{
@@ -114,6 +115,7 @@ header{
   #header{
   	background-size: cover;
   	background-position: center;
+  	background-color: #000000;
   }
 
   .home-page-header{

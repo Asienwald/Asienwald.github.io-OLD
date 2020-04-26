@@ -15,8 +15,13 @@ $(document).ready(() => {
             $("#sidenav-btn span i").addClass("fa-4x");
         }
         
-        let page = document.location.href.match(/[^\/]+$/)[0], link = "HOME";
-        if(page.includes("contact-me.html")) return;
+        try{
+            let page = document.location.href.match(/[^\/]+$/)[0];
+            if(page.includes("contact-me.html")) return;
+        }catch(e){
+            return;
+        }
+        
 
         if(window.innerWidth < 1920 && !prev_img.includes("vertical")){
             prev_img = prev_img.split(".jpg");

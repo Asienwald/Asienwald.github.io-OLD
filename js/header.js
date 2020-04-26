@@ -22,15 +22,19 @@ $(document).ready(() => {
         // console.log(target.position());
     }
     // $("nav .nav-links:contains('HOME')").css( "text-decoration", "underline" );
-    let page = document.location.href.match(/[^\/]+$/)[0], link = "HOME";
-    if(page.includes("index.html")) link = "HOME"
-    else if (page.includes("about-me.html")) link = "ABOUT ME";
-    else if(page.includes("experiences.html")) link = "EXPERIENCES";
-    else if(page.includes("projects.html")) link = "PROJECTS";
-    else if(page.includes("achievements.html")) link = "ACHIEVEMENTS";
-    else if(page.includes("contact-me.html")) link = "CONTACT ME";
 
-    $(`nav .nav-links:contains(${link})`).trigger("mouseenter");
+    try{
+        let page = document.location.href.match(/[^\/]+$/)[0], link = "HOME";
+        if(page.includes("index.html")) link = "HOME"
+        else if (page.includes("about-me.html")) link = "ABOUT ME";
+        else if(page.includes("experiences.html")) link = "EXPERIENCES";
+        else if(page.includes("projects.html")) link = "PROJECTS";
+        else if(page.includes("achievements.html")) link = "ACHIEVEMENTS";
+        else if(page.includes("contact-me.html")) link = "CONTACT ME";
+
+        $(`nav .nav-links:contains(${link})`).trigger("mouseenter");
+    }catch(e){return;}
+    
     
 })
 

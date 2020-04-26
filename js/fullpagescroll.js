@@ -6,9 +6,12 @@ $(document).ready(function () {
     var activeSection = 0;
     var stopAt = 1;
 
-    let page = document.location.href.match(/[^\/]+$/)[0], link = "HOME";
-    if (page.includes("about-me.html")) stopAt = 2;
-    else if (page.includes("experiences.html")) stopAt = 10;
+    try{
+        let page = document.location.href.match(/[^\/]+$/)[0], link = "HOME";
+        if (page.includes("about-me.html")) stopAt = 2;
+        else if (page.includes("experiences.html")) stopAt = 10;
+    }catch(e){return;}
+    
     // else if (page.includes("projects.html")) stopAt = 1;
     // else if (page.includes("achievements.html")) stopAt = 1;
     // else if (page.includes("contact-me.html")) stopAt = 1;
