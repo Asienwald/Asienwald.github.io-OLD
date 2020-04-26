@@ -22,7 +22,10 @@
 	border-bottom: 6px solid #777777;
 }
 
-footer .icon .show-sm{
+footer .icon .fa-2x{
+	display: none;
+}
+footer .icon .fa-4x{
 	display: none;
 }
 
@@ -34,7 +37,7 @@ footer .icon .show-sm{
 	footer .icon .fa-4x{
 		display: none;
 	}
-	footer .icon .show-sm{
+	footer .icon .fa-2x{
 		display: block;
 	}
 }
