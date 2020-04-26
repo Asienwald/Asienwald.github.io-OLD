@@ -7,7 +7,7 @@ $(document).ready(() => {
     function checkWidth(){
         // console.log("Change bg!");
         let prev_img = $("header").css("background-image"), img = "";
-        if(window.innerWidth < 1920){
+        if(window.innerWidth < 1280){
             $("#sidenav-btn span i").removeClass("fa-4x");
             $("#sidenav-btn span i").addClass("fa-2x");
         }else{
@@ -22,7 +22,7 @@ $(document).ready(() => {
         }
         
 
-        if(window.innerWidth < 1920 && !prev_img.includes("vertical")){
+        if(window.innerWidth < 1280 && !prev_img.includes("vertical")){
             prev_img = prev_img.split(".jpg");
             img = prev_img[0]+"_vertical.jpg";
     

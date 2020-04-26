@@ -16,7 +16,7 @@ $(document).ready(function () {
     // else if (page.includes("achievements.html")) stopAt = 1;
     // else if (page.includes("contact-me.html")) stopAt = 1;
 
-    if(window.innerHeight < 1280) stopAt = 0;
+    if(window.innerWidth < 1280) stopAt = 0;
 
     var continueNormalScrolling = false;
 
@@ -43,7 +43,7 @@ $(document).ready(function () {
     
 
     function checkWindowSize(){
-        var showSideNavBtn = (window.innerWidth < 1920) ? true : false;
+        var showSideNavBtn = (window.innerWidth < 1280) ? true : false;
 
         if(!showSideNavBtn) $("#sidenav-btn").hide();
         else{
@@ -51,7 +51,9 @@ $(document).ready(function () {
             $("#sidenav-btn").css({opacity: "100%"});
         }
 
+        console.log(window.innerWidth);
         if(window.innerWidth < 1280){
+            // console.log("SET TO TRUE");
             continueNormalScrolling = true;
         }else continueNormalScrolling = false;
 
@@ -69,10 +71,6 @@ $(document).ready(function () {
     
     window.addEventListener('wheel', function(event) {
 
-        // this.console.log($("html").scrollTop());
-        // this.console.log($(window).height() * activeSection);
-        // this.console.log(activeSection);
-
         if(($("html").scrollTop() < ($(window).height() * activeSection) - 10) && window.innerHeight > 1280){
             // console.log("do the wheelie");
             continueNormalScrolling = false;
@@ -82,8 +80,6 @@ $(document).ready(function () {
             event.preventDefault();
             event.stopPropagation();
         }else return;
-
-        
         
         // console.log($("html").scrollTop());
         if(scroll === false) return;
@@ -97,7 +93,10 @@ $(document).ready(function () {
                 activeSection--;
                 continueNormalScrolling = false;
             }
-        }else if (event.deltaY > 0){ 
+        }else if (event.deltaY > 0){ // scroll down
+
+            console.log(activeSection);
+            console.log(stopAt);
             
             if(activeSection != stopAt){
                 activeSection++;

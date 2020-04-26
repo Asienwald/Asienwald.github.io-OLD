@@ -82,3 +82,8 @@
     margin: auto 0;
   }
 }
+@media only screen and (max-width: 1920px){
+  #about-me-details{
+    font-size: 2vw;
+  }
+}
