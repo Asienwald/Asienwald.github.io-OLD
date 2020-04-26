@@ -15,12 +15,12 @@ $(document).ready(() => {
         if(page.includes("contact-me.html")) return;
 
         if(window.innerWidth < 1920 && !prev_img.includes("vertical")){
-            prev_img = prev_img.split(".");
-            img = prev_img[0]+"_vertical."+prev_img[1];
+            prev_img = prev_img.split(".jpg");
+            img = prev_img[0]+"_vertical.jpg";
     
         }else{
-            prev_img = prev_img.split("_vertical");
-            img = prev_img[0]+prev_img[1];
+            prev_img = prev_img.split("_vertical.jpg");
+            img = prev_img[0]+".jpg";
         }
 
         console.log(img);
