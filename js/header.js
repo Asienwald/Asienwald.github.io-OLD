@@ -33,7 +33,7 @@ $(document).ready(() => {
         else if(page.includes("contact-me.html")) link = "CONTACT ME";
 
         $(`nav .nav-links:contains(${link})`).trigger("mouseenter");
-    }catch(e){return;}
+    }catch(e){}
     
     
 })

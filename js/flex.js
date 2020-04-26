@@ -19,7 +19,6 @@ $(document).ready(() => {
             let page = document.location.href.match(/[^\/]+$/)[0];
             if(page.includes("contact-me.html")) return;
         }catch(e){
-            return;
         }
         
 
